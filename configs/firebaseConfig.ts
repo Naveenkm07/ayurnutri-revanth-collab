@@ -6,13 +6,13 @@ import { Firestore, getFirestore, initializeFirestore } from "firebase/firestore
 
 // AyurNutri Firebase Configuration (reads from .env)
 const firebaseConfig = {
-    apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY,
-    authDomain: process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID,
-    storageBucket: process.env.EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.EXPO_PUBLIC_FIREBASE_APP_ID,
-    measurementId: process.env.EXPO_PUBLIC_FIREBASE_MEASUREMENT_ID,
+    apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY || "AIzaSyCU4gM649vWdTgGmGFxonuVfYR9tQ0D8jk",
+    authDomain: process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN || "ayurnutri-9d2bd.firebaseapp.com",
+    projectId: process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID || "ayurnutri-9d2bd",
+    storageBucket: process.env.EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET || "ayurnutri-9d2bd.firebasestorage.app",
+    messagingSenderId: process.env.EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID || "566907863017",
+    appId: process.env.EXPO_PUBLIC_FIREBASE_APP_ID || "1:566907863017:web:c30f3e99089c5d4b0ad578",
+    measurementId: process.env.EXPO_PUBLIC_FIREBASE_MEASUREMENT_ID || "G-85EJW0YZJ9",
 };
 
 import { Platform } from "react-native";
